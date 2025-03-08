@@ -38,6 +38,42 @@ activities = {
         "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",
         "max_participants": 30,
         "participants": ["john@mergington.edu", "olivia@mergington.edu"]
+    },
+    "Basketball Team": {
+        "description": "Competitive basketball training and tournaments",
+        "schedule": "Mondays and Wednesdays, 4:00 PM - 6:00 PM",
+        "max_participants": 15,
+        "participants": ["alex@mergington.edu"]
+    },
+    "Swimming Club": {
+        "description": "Swimming training and water sports activities",
+        "schedule": "Tuesdays and Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 20,
+        "participants": ["lisa@mergington.edu"]
+    },
+    "Art Studio": {
+        "description": "Express creativity through various art mediums",
+        "schedule": "Wednesdays, 3:30 PM - 5:30 PM",
+        "max_participants": 15,
+        "participants": ["maria@mergington.edu"]
+    },
+    "Drama Club": {
+        "description": "Theater arts, acting, and performance skills",
+        "schedule": "Tuesdays and Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 20,
+        "participants": ["james@mergington.edu"]
+    },
+    "Science Club": {
+        "description": "Hands-on experiments and scientific exploration",
+        "schedule": "Mondays, 3:30 PM - 5:00 PM",
+        "max_participants": 15,
+        "participants": ["david@mergington.edu"]
+    },
+    "Debate Team": {
+        "description": "Develop public speaking and argumentation skills",
+        "schedule": "Fridays, 4:00 PM - 6:00 PM",
+        "max_participants": 12,
+        "participants": ["sarah@mergington.edu"]
     }
 }
 
@@ -61,6 +97,8 @@ def signup_for_activity(activity_name: str, email: str):
 
     # Get the specificy activity
     activity = activities[activity_name]
+
+    # Validate student is not already signed up
 
     # Add student
     activity["participants"].append(email)
